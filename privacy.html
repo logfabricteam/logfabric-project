@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Privacy Policy | LogFabric</title>
+  
+ <!-- Tailwind CSS & Lucide Icons CDN -->
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script src="https://unpkg.com/lucide@latest"></script>
+  
+ <style>
+ /* テキストグラデーション用ユーティリティ (共通) */
+ .text-gradient {
+  background: linear-gradient(135deg, #f97316 0%, #8b5cf6 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ }
+ </style>
+</head>
+<body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-blue-500/30">
+
+ <!-- ヘッダー -->
+ <header class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
+ <div class="container mx-auto px-6 h-16 flex items-center justify-between">
+  <a href="index.html" class="text-xl font-bold tracking-tighter text-white flex items-center gap-2 hover:opacity-80 transition-opacity">
+  <i data-lucide="layers" class="w-6 h-6 text-orange-500"></i>
+  LogFabric
+  </a>
+  <a href="index.html" class="text-sm font-medium text-slate-400 hover:text-white transition-colors flex items-center gap-1">
+  <i data-lucide="arrow-left" class="w-4 h-4"></i>
+  Back to Home
+  </a>
+ </div>
+ </header>
+
+ <!-- メインコンテンツ -->
+ <main class="pt-32 pb-20 container mx-auto px-6 max-w-3xl">
+ <div class="mb-12 border-b border-slate-800 pb-8">
+  <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
+  LogFabric Privacy Policy
+  </h1>
+  <p class="text-slate-400 text-sm">
+  最終改定日: 2026年3月21日
+  </p>
+ </div>
+
+ <div class="space-y-10 text-slate-300 leading-relaxed">
+  <section>
+  <p class="mb-4">
+   LogFabric Project（以下「当プロジェクト」）は、提供するサービス「LogFabric」（以下「本サービス」）における、ユーザーの個人情報およびシステム運用データの取り扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」）を定めます。本サービスは現在、初期プロトタイプ開発段階にあり、サービスの拡充に伴い本ポリシーの内容は改定される場合があります。
+  </p>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">1</span>
+   収集する情報
+  </h2>
+  <p class="mb-3">当プロジェクトは、本サービスの提供にあたり、以下の情報を収集する場合があります。</p>
+  <ul class="list-disc pl-5 space-y-2 text-slate-400">
+   <li><strong>ユーザーに関する情報:</strong> 氏名、メールアドレス、所属企業名、その他お問い合わせやテスト参加時にご提供いただく連絡先情報。</li>
+   <li><strong>利用状況に関する情報:</strong> アクセスログ、IPアドレス、ブラウザ情報、端末情報等。</li>
+   <li><strong>連携データ:</strong> 本サービスの機能提供に伴い、連携する外部サービスからAPI等を経由して取得する運用ログやトランザクションデータ。</li>
+  </ul>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">2</span>
+   利用目的
+  </h2>
+  <p class="mb-3">収集した情報は、以下の目的のために利用いたします。</p>
+  <ul class="list-disc pl-5 space-y-2 text-slate-400">
+   <li>本サービス（決済後オペレーション統制基盤）の提供、維持、保護および機能改善のため</li>
+   <li>初期プロトタイプの検証、テスト、およびシステム安定性向上のため</li>
+   <li>ユーザーからのお問い合わせ対応、およびサポート提供のため</li>
+   <li>本サービスに関するご案内、アップデート情報等のご連絡のため</li>
+  </ul>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">3</span>
+   外部サービスとの連携に関する説明
+  </h2>
+  <p class="text-slate-400 mb-3">
+   本サービスは、Lステップ、UTAGE、Stripeなどの外部サービス間で発生する運用処理を、安全・追跡可能・再処理可能な形で統制することを目的としています。
+  </p>
+  <p class="text-slate-400">
+   そのため、各外部サービスとのAPI連携を通じて必要なデータ（決済処理のステータス、ユーザーID、Webhookペイロード等）を取得・処理しますが、これらのデータは運用処理の統制、エラー追跡、および再処理の実行という目的の範囲内でのみ厳格に取り扱われます。
+  </p>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">4</span>
+   情報管理について
+  </h2>
+  <p class="text-slate-400 mb-3">
+   当プロジェクトは、収集した情報の漏洩、滅失、または毀損の防止、その他収集した情報の適切な管理のために、必要かつ適切なセキュリティ対策を講じます。
+  </p>
+  <p class="text-slate-400">
+   また、法令で定められた場合を除き、あらかじめユーザーの同意を得ることなく、個人情報を第三者に提供することはありません。
+  </p>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">5</span>
+   お問い合わせ先
+  </h2>
+  <p class="text-slate-400 mb-3">
+   本ポリシーに関するご質問や、情報取り扱いに関するお問い合わせは、以下の窓口までご連絡ください。
+  </p>
+  <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+   <p class="mb-2"><strong class="text-white">運営主体:</strong> LogFabric Project</p>
+   <p><strong class="text-white">Email:</strong> <a href="mailto:info@logfabric.com" class="text-blue-400 hover:text-blue-300 transition-colors">info@logfabric.com</a></p>
+  </div>
+  </section>
+ </div>
+
+ <div class="mt-16 pt-8 border-t border-slate-800 text-center">
+  <a href="index.html" class="inline-flex items-center gap-2 text-slate-400 hover:text-white bg-slate-900 hover:bg-slate-800 px-6 py-3 rounded-full transition-colors font-medium">
+  <i data-lucide="arrow-left" class="w-4 h-4"></i>
+  Back to Home
+  </a>
+ </div>
+ </main>
+
+ <!-- フッター -->
+ <footer class="border-t border-slate-900 py-8 text-center text-slate-600 text-sm bg-slate-950">
+ <div class="container mx-auto px-6">
+  <div class="mb-4 space-y-1">
+  <p>Operator: LogFabric Project</p>
+  <p>Contact: <a href="mailto:info@logfabric.com" class="hover:text-white transition-colors">info@logfabric.com</a></p>
+  </div>
+  <p>&copy; 2026 LogFabric Project. All rights reserved.</p>
+ </div>
+ </footer>
+
+ <!-- Lucideアイコンの初期化スクリプト -->
+ <script>
+ lucide.createIcons();
+ </script>
+</body>
+</html>
