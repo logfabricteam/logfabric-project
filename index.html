@@ -10,211 +10,216 @@
  <script src="https://unpkg.com/lucide@latest"></script>
   
  <style>
-  /* テキストグラデーション用ユーティリティ */
-  .text-gradient {
-   background: linear-gradient(135deg, #f97316 0%, #8b5cf6 50%, #3b82f6 100%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   background-clip: text;
-  }
+ /* テキストグラデーション用ユーティリティ */
+ .text-gradient {
+  background: linear-gradient(135deg, #f97316 0%, #8b5cf6 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ }
  </style>
 </head>
 <body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-blue-500/30">
 
  <!-- ヘッダー -->
  <header class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
-  <div class="container mx-auto px-6 h-16 flex items-center justify-between">
-   <div class="text-xl font-bold tracking-tighter text-white flex items-center gap-2">
-    <!-- Cloudflareのオレンジを意識したアクセント -->
-    <i data-lucide="layers" class="w-6 h-6 text-orange-500"></i>
-    LogFabric
-   </div>
-   <a href="mailto:info@logfabric.com" class="text-sm font-medium text-white bg-slate-800 hover:bg-slate-700 px-4 py-2 rounded-full transition-colors">
-    お問い合わせ
-   </a>
+ <div class="container mx-auto px-6 h-16 flex items-center justify-between">
+  <div class="text-xl font-bold tracking-tighter text-white flex items-center gap-2">
+  <!-- Cloudflareのオレンジを意識したアクセント -->
+  <i data-lucide="layers" class="w-6 h-6 text-orange-500"></i>
+  LogFabric
   </div>
+  <a href="mailto:info@logfabric.com" class="text-sm font-medium text-white bg-slate-800 hover:bg-slate-700 px-4 py-2 rounded-full transition-colors">
+  お問い合わせ
+  </a>
+ </div>
  </header>
 
  <!-- ヒーローセクション -->
  <section class="pt-32 pb-20 md:pt-48 md:pb-32 container mx-auto px-6 text-center">
-  <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
-   継続課金ビジネスの<br class="hidden md:block">
-   <span class="text-gradient">決済後オペレーションを統制する。</span>
-  </h1>
-  <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-   Lステップ、UTAGE、Stripe等で発生する複雑な運用処理を安全に一元管理。<br>
-   処理漏れを防ぎ、追跡・再処理を可能にする、次世代の運用統制基盤です。
-  </p>
-  <div class="flex items-center justify-center gap-4">
-    <a href="mailto:info@logfabric.com" class="inline-flex items-center gap-2 bg-white text-slate-950 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform">
-     <i data-lucide="mail" class="w-5 h-5"></i>
-     導入のご相談
-    </a>
-  </div>
+ <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+  継続課金ビジネスの<br class="hidden md:block">
+  <span class="text-gradient">決済後オペレーションを統制する。</span>
+ </h1>
+ <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+  LogFabric は、継続課金商材の決済後オペレーションを対象に、Lステップ、UTAGE、Stripe などの外部サービス間で発生する運用処理を、安全・追跡可能・再処理可能な形で統制するためのSaaS / 運用基盤です。
+ </p>
+ <div class="flex items-center justify-center gap-4">
+  <a href="mailto:info@logfabric.com" class="inline-flex items-center gap-2 bg-white text-slate-950 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform">
+   <i data-lucide="mail" class="w-5 h-5"></i>
+   導入のご相談
+  </a>
+ </div>
  </section>
 
  <!-- 課題とソリューション -->
  <section class="py-20 bg-slate-900 border-y border-slate-800">
-  <div class="container mx-auto px-6">
-   <div class="text-center mb-16">
-    <h2 class="text-3xl font-bold text-white mb-4">複雑化する決済後処理の「闇」を解消</h2>
-    <p class="text-slate-400 max-w-2xl mx-auto">複数のSaaS連携によってブラックボックス化した運用処理を、安全で確実なものへ。</p>
-   </div>
-    
-   <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-    <!-- 課題 -->
-    <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800">
-     <div class="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center mb-6 border border-slate-800 text-slate-400">
-      <i data-lucide="x-circle" class="w-6 h-6"></i>
-     </div>
-     <h3 class="text-xl font-bold text-white mb-3">解決すべき課題</h3>
-     <ul class="space-y-3 text-slate-400">
-      <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 複数サービス連携による運用処理のブラックボックス化</li>
-      <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> エラー発生時の処理状況の追跡が困難</li>
-      <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 決済後の手作業対応による遅延と再処理の複雑さ</li>
-     </ul>
-    </div>
-     
-    <!-- 解決策 -->
-    <div class="bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700 relative overflow-hidden">
-     <!-- AIブルーのぼかしエフェクト -->
-     <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 blur-3xl rounded-full"></div>
-     <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 border border-blue-500/30 text-blue-400 relative z-10">
-      <i data-lucide="check-circle-2" class="w-6 h-6"></i>
-     </div>
-     <h3 class="text-xl font-bold text-white mb-3 relative z-10">LogFabricの解決策</h3>
-     <ul class="space-y-3 text-slate-300 relative z-10">
-      <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-blue-400 shrink-0 mt-0.5"></i> 外部サービス間の運用処理を安全・確実に一元管理</li>
-      <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-blue-400 shrink-0 mt-0.5"></i> すべての処理状況を可視化し、高い追跡可能性を提供</li>
-      <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-blue-400 shrink-0 mt-0.5"></i> エラー発生時でも安全に再処理できる統制基盤</li>
-     </ul>
-    </div>
-   </div>
+ <div class="container mx-auto px-6">
+  <div class="text-center mb-16">
+  <h2 class="text-3xl font-bold text-white mb-4">複雑化する決済後処理の「闇」を解消</h2>
+  <p class="text-slate-400 max-w-2xl mx-auto">複数のSaaS連携によってブラックボックス化した運用処理を、安全で確実なものへ。</p>
   </div>
+   
+  <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+  <!-- 課題 -->
+  <div class="bg-slate-950 p-8 rounded-2xl border border-slate-800">
+   <div class="w-12 h-12 bg-slate-900 rounded-lg flex items-center justify-center mb-6 border border-slate-800 text-slate-400">
+   <i data-lucide="x-circle" class="w-6 h-6"></i>
+   </div>
+   <h3 class="text-xl font-bold text-white mb-3">解決すべき課題</h3>
+   <ul class="space-y-3 text-slate-400">
+   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 複数サービス連携による運用処理のブラックボックス化</li>
+   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> エラー発生時の処理状況の追跡が困難</li>
+   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 決済後の手作業対応による遅延と再処理の複雑さ</li>
+   </ul>
+  </div>
+   
+  <!-- 解決策 -->
+  <div class="bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-700 relative overflow-hidden">
+   <!-- AIブルーのぼかしエフェクト -->
+   <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 blur-3xl rounded-full"></div>
+   <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 border border-blue-500/30 text-blue-400 relative z-10">
+   <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+   </div>
+   <h3 class="text-xl font-bold text-white mb-3 relative z-10">LogFabricの解決策</h3>
+   <ul class="space-y-3 text-slate-300 relative z-10">
+   <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-blue-400 shrink-0 mt-0.5"></i> 外部サービス間で発生する運用処理を安全・確実に一元管理</li>
+   <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-blue-400 shrink-0 mt-0.5"></i> すべての処理状況を可視化し、高い追跡可能性を提供</li>
+   <li class="flex items-start gap-2"><i data-lucide="check" class="w-5 h-5 text-blue-400 shrink-0 mt-0.5"></i> エラー発生時でも安全に再処理できる統制基盤を提供</li>
+   </ul>
+  </div>
+  </div>
+ </div>
  </section>
 
  <!-- テクノロジー -->
  <section class="py-24 container mx-auto px-6">
-  <div class="text-center mb-16">
-   <h2 class="text-3xl font-bold text-white mb-4">エンタープライズ級のAIテクノロジー</h2>
-   <p class="text-slate-400 max-w-2xl mx-auto">セキュアで高速なエッジインフラと、世界最高峰のAIモデルを組み合わせることで、ミッションクリティカルな業務自動化を実現します。</p>
+ <div class="text-center mb-16">
+  <h2 class="text-3xl font-bold text-white mb-4">エンタープライズ級のAIテクノロジー</h2>
+  <p class="text-slate-400 max-w-2xl mx-auto">セキュアで高速なエッジインフラと、世界最高峰のAIモデルを組み合わせることで、ミッションクリティカルな業務自動化を実現します。</p>
+ </div>
+  
+ <div class="grid md:grid-cols-3 gap-8">
+  <!-- Cloudflare -->
+  <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-orange-500/50 transition-colors group">
+  <i data-lucide="cloud-lightning" class="w-10 h-10 text-orange-500 mb-6 group-hover:scale-110 transition-transform"></i>
+  <h3 class="text-xl font-bold text-white mb-3">Cloudflare Workers</h3>
+  <p class="text-slate-400 text-sm leading-relaxed">
+   サーバーレスのエッジコンピューティング環境を採用。グローバル規模での超低遅延処理と、強固なセキュリティ基盤を提供します。
+  </p>
   </div>
    
-  <div class="grid md:grid-cols-3 gap-8">
-   <!-- Cloudflare -->
-   <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-orange-500/50 transition-colors group">
-    <i data-lucide="cloud-lightning" class="w-10 h-10 text-orange-500 mb-6 group-hover:scale-110 transition-transform"></i>
-    <h3 class="text-xl font-bold text-white mb-3">Cloudflare Workers</h3>
-    <p class="text-slate-400 text-sm leading-relaxed">
-     サーバーレスのエッジコンピューティング環境を採用。グローバル規模での超低遅延処理と、強固なセキュリティ基盤を提供します。
-    </p>
-   </div>
-    
-   <!-- Bedrock -->
-   <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 transition-colors group">
-    <i data-lucide="cpu" class="w-10 h-10 text-purple-500 mb-6 group-hover:scale-110 transition-transform"></i>
-    <h3 class="text-xl font-bold text-white mb-3">Amazon Bedrock</h3>
-    <p class="text-slate-400 text-sm leading-relaxed">
-     Claudeモデルを中核としたセキュアな生成AI基盤。厳格なデータ保護要件を満たしつつ、高度な論理推論と安全なコード生成を実行します。
-    </p>
-   </div>
-    
-   <!-- Vertex AI -->
-   <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-colors group">
-    <i data-lucide="bot" class="w-10 h-10 text-blue-500 mb-6 group-hover:scale-110 transition-transform"></i>
-    <h3 class="text-xl font-bold text-white mb-3">Google Vertex AI</h3>
-    <p class="text-slate-400 text-sm leading-relaxed">
-     Geminiモデルを活用。マルチモーダルデータ処理と高速な推論能力により、複雑な状況判断を伴う自律型エージェントを実装します。
-    </p>
-   </div>
+  <!-- Bedrock -->
+  <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 transition-colors group">
+  <i data-lucide="cpu" class="w-10 h-10 text-purple-500 mb-6 group-hover:scale-110 transition-transform"></i>
+  <h3 class="text-xl font-bold text-white mb-3">Amazon Bedrock</h3>
+  <p class="text-slate-400 text-sm leading-relaxed">
+   Claudeモデルを中核としたセキュアな生成AI基盤。厳格なデータ保護要件を満たしつつ、高度な論理推論と安全なコード生成を実行します。
+  </p>
   </div>
+   
+  <!-- Vertex AI -->
+  <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-colors group">
+  <i data-lucide="bot" class="w-10 h-10 text-blue-500 mb-6 group-hover:scale-110 transition-transform"></i>
+  <h3 class="text-xl font-bold text-white mb-3">Google Vertex AI</h3>
+  <p class="text-slate-400 text-sm leading-relaxed">
+   Geminiモデルを活用。マルチモーダルデータ処理と高速な推論能力により、複雑な状況判断を伴う自律型エージェントを実装します。
+  </p>
+  </div>
+ </div>
  </section>
 
  <!-- ロードマップ -->
  <section class="py-24 bg-slate-900 border-y border-slate-800 relative overflow-hidden">
-  <!-- 装飾用グラデーション -->
-  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px] bg-gradient-to-r from-orange-500/10 via-purple-500/10 to-blue-500/10 blur-[100px] rounded-full pointer-events-none"></div>
+ <!-- 装飾用グラデーション -->
+ <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px] bg-gradient-to-r from-orange-500/10 via-purple-500/10 to-blue-500/10 blur-[100px] rounded-full pointer-events-none"></div>
 
-  <div class="container mx-auto px-6 relative z-10">
-   <div class="text-center mb-16">
-    <h2 class="text-3xl font-bold text-white mb-4">プロジェクト ロードマップ</h2>
-    <p class="text-slate-400">現在、初期プロトタイプ開発段階です。</p>
+ <div class="container mx-auto px-6 relative z-10">
+  <div class="text-center mb-16">
+  <h2 class="text-3xl font-bold text-white mb-4">プロジェクト ロードマップ</h2>
+  <p class="text-slate-400">現在、初期プロトタイプ開発段階です。</p>
+  </div>
+
+  <div class="max-w-3xl mx-auto space-y-8">
+  <!-- フェーズ 1 -->
+  <div class="flex gap-6 md:gap-8 items-start">
+   <div class="flex flex-col items-center">
+   <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white shrink-0 shadow-[0_0_15px_rgba(59,130,246,0.5)]">
+    <span class="font-bold text-sm">P1</span>
    </div>
-
-   <div class="max-w-3xl mx-auto space-y-8">
-    <!-- フェーズ 1 -->
-    <div class="flex gap-6 md:gap-8 items-start">
-     <div class="flex flex-col items-center">
-      <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white shrink-0 shadow-[0_0_15px_rgba(59,130,246,0.5)]">
-       <span class="font-bold text-sm">P1</span>
-      </div>
-      <div class="w-px h-full bg-slate-800 my-2 min-h-[60px]"></div>
-     </div>
-     <div class="pt-1.5 pb-8">
-      <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-3">
-       初期プロトタイプ開発 <span class="text-xs font-semibold px-2 py-1 bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">Current</span>
-      </h3>
-      <p class="text-slate-400">主要なAIモデル（Claude / Gemini）を活用し、Lステップ、UTAGE、Stripe などの外部サービス間で発生する処理を安全に統制するための基本的な運用基盤を構築・検証中。</p>
-     </div>
-    </div>
-
-    <!-- フェーズ 2 -->
-    <div class="flex gap-6 md:gap-8 items-start">
-     <div class="flex flex-col items-center">
-      <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 shrink-0">
-       <span class="font-bold text-sm">P2</span>
-      </div>
-      <div class="w-px h-full bg-slate-800 my-2 min-h-[60px]"></div>
-     </div>
-     <div class="pt-1.5 pb-8">
-      <h3 class="text-xl font-bold text-white mb-2">インテグレーションの拡大</h3>
-      <p class="text-slate-400">主要な決済システムや、多様なマーケティングオートメーション・ツールとのAPI連携を強化し、汎用的なオペレーション基盤へ拡張。</p>
-     </div>
-    </div>
-
-    <!-- フェーズ 3 -->
-    <div class="flex gap-6 md:gap-8 items-start">
-     <div class="flex flex-col items-center">
-      <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 shrink-0">
-       <i data-lucide="sparkles" class="w-5 h-5"></i>
-      </div>
-     </div>
-     <div class="pt-1.5">
-      <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-400 mb-2">自律型AIへの進化</h3>
-      <p class="text-slate-400">自律型AIエージェントが状況を認識・判断し、自己最適化を実行。人間の介入を限りなくゼロにする究極のオペレーションインフラを完成させます。</p>
-     </div>
-    </div>
+   <div class="w-px h-full bg-slate-800 my-2 min-h-[60px]"></div>
+   </div>
+   <div class="pt-1.5 pb-8">
+   <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-3">
+    初期プロトタイプ開発 <span class="text-xs font-semibold px-2 py-1 bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">Current</span>
+   </h3>
+   <p class="text-slate-400">主要なAIモデル（Claude / Gemini）を活用し、Lステップ、UTAGE、Stripe などの外部サービス間で発生する処理を安全に統制するための基本的な運用基盤を構築・検証中。</p>
    </div>
   </div>
+
+  <!-- フェーズ 2 -->
+  <div class="flex gap-6 md:gap-8 items-start">
+   <div class="flex flex-col items-center">
+   <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 shrink-0">
+    <span class="font-bold text-sm">P2</span>
+   </div>
+   <div class="w-px h-full bg-slate-800 my-2 min-h-[60px]"></div>
+   </div>
+   <div class="pt-1.5 pb-8">
+   <h3 class="text-xl font-bold text-white mb-2">インテグレーションの拡大</h3>
+   <p class="text-slate-400">主要な決済システムや、多様なマーケティングオートメーション・ツールとのAPI連携を強化し、汎用的なオペレーション基盤へ拡張。</p>
+   </div>
+  </div>
+
+  <!-- フェーズ 3 -->
+  <div class="flex gap-6 md:gap-8 items-start">
+   <div class="flex flex-col items-center">
+   <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-400 shrink-0">
+    <i data-lucide="sparkles" class="w-5 h-5"></i>
+   </div>
+   </div>
+   <div class="pt-1.5">
+   <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-400 mb-2">自律型AIへの進化</h3>
+   <p class="text-slate-400">自律型AIエージェントが状況を認識・判断し、自己最適化を実行。人間の介入を限りなくゼロにする究極のオペレーションインフラを完成させます。</p>
+   </div>
+  </div>
+  </div>
+ </div>
  </section>
 
  <!-- CTA / お問い合わせ -->
  <section class="py-24 container mx-auto px-6 text-center">
-  <div class="max-w-3xl mx-auto p-10 md:p-14 rounded-3xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 shadow-2xl">
-   <i data-lucide="rocket" class="w-12 h-12 text-orange-500 mx-auto mb-6"></i>
-   <h2 class="text-3xl font-bold text-white mb-6">共に、次の次元のビジネスを。</h2>
-   <p class="text-slate-400 mb-8 leading-relaxed max-w-xl mx-auto">
-    現在、クローズドでのプロトタイプテストへのご参加や、パートナーシップに関するお問い合わせを受け付けております。
-   </p>
-   <a href="mailto:info@logfabric.com" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all">
-    <i data-lucide="mail" class="w-5 h-5"></i>
-    info@logfabric.com へ連絡する
-   </a>
-  </div>
+ <div class="max-w-3xl mx-auto p-10 md:p-14 rounded-3xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 shadow-2xl">
+  <i data-lucide="rocket" class="w-12 h-12 text-orange-500 mx-auto mb-6"></i>
+  <h2 class="text-3xl font-bold text-white mb-6">共に、次の次元のビジネスを。</h2>
+  <p class="text-slate-400 mb-8 leading-relaxed max-w-xl mx-auto">
+  現在、クローズドでのプロトタイプテストへのご参加や、パートナーシップに関するお問い合わせを受け付けております。
+  </p>
+  <a href="mailto:info@logfabric.com" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all">
+  <i data-lucide="mail" class="w-5 h-5"></i>
+  info@logfabric.com へ連絡する
+  </a>
+ </div>
  </section>
 
  <!-- フッター -->
  <footer class="border-t border-slate-900 py-8 text-center text-slate-600 text-sm">
+ <div class="container mx-auto px-6">
   <div class="flex justify-center gap-6 mb-4">
-   <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-   <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+  <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+  <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
   </div>
-  <p>&copy; Logfabric Project. All rights reserved.</p>
+  <div class="mb-4 space-y-1">
+  <p>Operator: LogFabric Project</p>
+  <p>Contact: <a href="mailto:info@logfabric.com" class="hover:text-white transition-colors">info@logfabric.com</a></p>
+  </div>
+  <p>&copy; LogFabric Project. All rights reserved.</p>
+ </div>
  </footer>
 
  <!-- Lucideアイコンの初期化スクリプト -->
  <script>
-  lucide.createIcons();
+ lucide.createIcons();
  </script>
 </body>
 </html>
