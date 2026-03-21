@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Terms of Service | LogFabric</title>
+  
+ <!-- Tailwind CSS & Lucide Icons CDN -->
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script src="https://unpkg.com/lucide@latest"></script>
+  
+ <style>
+ /* テキストグラデーション用ユーティリティ (共通) */
+ .text-gradient {
+  background: linear-gradient(135deg, #f97316 0%, #8b5cf6 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ }
+ </style>
+</head>
+<body class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-blue-500/30">
+
+ <!-- ヘッダー -->
+ <header class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
+ <div class="container mx-auto px-6 h-16 flex items-center justify-between">
+  <a href="index.html" class="text-xl font-bold tracking-tighter text-white flex items-center gap-2 hover:opacity-80 transition-opacity">
+  <i data-lucide="layers" class="w-6 h-6 text-orange-500"></i>
+  LogFabric
+  </a>
+  <a href="index.html" class="text-sm font-medium text-slate-400 hover:text-white transition-colors flex items-center gap-1">
+  <i data-lucide="arrow-left" class="w-4 h-4"></i>
+  Back to Home
+  </a>
+ </div>
+ </header>
+
+ <!-- メインコンテンツ -->
+ <main class="pt-32 pb-20 container mx-auto px-6 max-w-3xl">
+ <div class="mb-12 border-b border-slate-800 pb-8">
+  <h1 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-4">
+  LogFabric Terms of Service
+  </h1>
+  <p class="text-slate-400 text-sm">
+  最終改定日: 2026年3月21日
+  </p>
+ </div>
+
+ <div class="space-y-10 text-slate-300 leading-relaxed">
+  <section>
+  <p class="mb-4">
+   この利用規約（以下「本規約」）は、LogFabric Project（以下「当プロジェクト」）が提供するサービス「LogFabric」（以下「本サービス」）の利用条件を定めるものです。本サービスをご利用になる方（以下「ユーザー」）は、本規約に同意したものとみなされます。
+  </p>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">1</span>
+   サービスの概要
+  </h2>
+  <p class="mb-3">
+   LogFabric は、継続課金商材の決済後オペレーションを対象に、Lステップ、UTAGE、Stripe などの外部サービス間で発生する運用処理を、安全・追跡可能・再処理可能な形で統制するためのSaaSおよび運用基盤です。
+  </p>
+  <p class="text-slate-400">
+   本サービスは現在、<strong>初期プロトタイプ開発段階</strong>として提供されています。
+  </p>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">2</span>
+   利用上の注意
+  </h2>
+  <ul class="list-disc pl-5 space-y-2 text-slate-400">
+   <li>本サービスはプロトタイプ段階であるため、事前の予告なく機能の追加、変更、または提供の停止が行われる場合があります。</li>
+   <li>本サービスは、外部サービス（Stripe、Lステップ、UTAGE等）のAPIを利用して連携を行います。外部サービス側の仕様変更や障害により、本サービスの一部機能が利用できなくなる可能性があります。</li>
+   <li>ユーザーは、連携する外部サービスのアカウントおよびAPIキー等を、自己の責任において適切に管理するものとします。</li>
+  </ul>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">3</span>
+   禁止事項
+  </h2>
+  <p class="mb-3 text-slate-400">ユーザーは、本サービスの利用にあたり、以下の行為を行ってはなりません。</p>
+  <ul class="list-disc pl-5 space-y-2 text-slate-400">
+   <li>法令または公序良俗に違反する行為、および犯罪行為に関連する行為</li>
+   <li>本サービスのネットワークまたはシステム等に過度な負荷をかける行為</li>
+   <li>当プロジェクトのサービスの運営を妨害するおそれのある行為</li>
+   <li>他のユーザー、外部サービス提供者、または第三者に不利益、損害、不快感を与える行為</li>
+   <li>リバースエンジニアリング、逆コンパイル、または本サービスのソースコードを抽出しようとする行為</li>
+  </ul>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">4</span>
+   免責事項
+  </h2>
+  <p class="mb-3 text-slate-400">
+   当プロジェクトは、本サービスに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます）がないことを明示的にも黙示的にも保証しておりません。
+  </p>
+  <p class="text-slate-400">
+   本サービスを利用したこと、または利用できなかったこと（プロトタイプ環境の停止、データ消失、連携エラー等を含みます）に起因してユーザーに生じたあらゆる損害について、当プロジェクトは一切の責任を負わないものとします。
+  </p>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">5</span>
+   内容変更の可能性
+  </h2>
+  <p class="text-slate-400">
+   当プロジェクトは、必要と判断した場合には、ユーザーに個別の通知をすることなくいつでも本規約を変更することができるものとします。変更後の利用規約は、本ウェブサイトに掲示した時点から効力を生じるものとし、ユーザーは変更後の規約に同意したものとみなされます。
+  </p>
+  </section>
+
+  <section>
+  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">6</span>
+   お問い合わせ先
+  </h2>
+  <p class="text-slate-400 mb-3">
+   本規約に関するお問い合わせは、以下の窓口までお願いいたします。
+  </p>
+  <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+   <p class="mb-2"><strong class="text-white">運営主体:</strong> LogFabric Project</p>
+   <p><strong class="text-white">Email:</strong> <a href="mailto:info@logfabric.com" class="text-blue-400 hover:text-blue-300 transition-colors">info@logfabric.com</a></p>
+  </div>
+  </section>
+ </div>
+
+ <div class="mt-16 pt-8 border-t border-slate-800 text-center">
+  <a href="index.html" class="inline-flex items-center gap-2 text-slate-400 hover:text-white bg-slate-900 hover:bg-slate-800 px-6 py-3 rounded-full transition-colors font-medium">
+  <i data-lucide="arrow-left" class="w-4 h-4"></i>
+  Back to Home
+  </a>
+ </div>
+ </main>
+
+ <!-- フッター -->
+ <footer class="border-t border-slate-900 py-8 text-center text-slate-600 text-sm bg-slate-950">
+ <div class="container mx-auto px-6">
+  <div class="mb-4 space-y-1">
+  <p>Operator: LogFabric Project</p>
+  <p>Contact: <a href="mailto:info@logfabric.com" class="hover:text-white transition-colors">info@logfabric.com</a></p>
+  </div>
+  <p>&copy; 2026 LogFabric Project. All rights reserved.</p>
+ </div>
+ </footer>
+
+ <!-- Lucideアイコンの初期化スクリプト -->
+ <script>
+ lucide.createIcons();
+ </script>
+</body>
+</html>
