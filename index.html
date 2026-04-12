@@ -95,50 +95,43 @@
  </div>
  </section>
 
- <!-- テクノロジー -->
- <section class="py-24 container mx-auto px-6">
- <div class="text-center mb-16">
-  <h2 class="text-3xl font-bold text-white mb-4">運用を支える技術基盤</h2>
-  <p class="text-slate-400 max-w-2xl mx-auto">安全な処理、追跡可能性、再処理しやすさを支えるために、クラウド基盤とAI活用を組み合わせて設計しています。</p>
- </div>
-  
- <div class="grid md:grid-cols-3 gap-8">
-  <!-- Cloudflare -->
-  <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-orange-500/50 transition-colors group">
-  <i data-lucide="cloud-lightning" class="w-10 h-10 text-orange-500 mb-6 group-hover:scale-110 transition-transform"></i>
-  <h3 class="text-xl font-bold text-white mb-3">Cloudflare Workers</h3>
-  <p class="text-slate-400 text-sm leading-relaxed">
-   Cloudflare Workers を活用し、Webhook処理や外部連携を安定して受けるための基盤として利用しています。
-  </p>
+<!-- テクノロジー -->
+<section class="py-24 container mx-auto px-6">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl font-bold text-white mb-4">運用を支える基盤</h2>
+    <p class="text-slate-400 max-w-2xl mx-auto">
+      LogFabric は、安全な処理、追跡可能性、再確認・再処理のしやすさを重視して、運用基盤を段階的に構築しています。
+    </p>
   </div>
-   
-  <!-- Bedrock -->
-  <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 transition-colors group">
-  <i data-lucide="cpu" class="w-10 h-10 text-purple-500 mb-6 group-hover:scale-110 transition-transform"></i>
-  <h3 class="text-xl font-bold text-white mb-3">Amazon Bedrock</h3>
-  <p class="text-slate-400 text-sm leading-relaxed">
-   Amazon Bedrock は、設計・実装・検証の開発支援に活用しています。安全性と運用性を重視した開発体制の一部です。
-  </p>
-  </div>
-   
-  <!-- Vertex AI -->
-  <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-colors group">
-  <i data-lucide="bot" class="w-10 h-10 text-blue-500 mb-6 group-hover:scale-110 transition-transform"></i>
-  <h3 class="text-xl font-bold text-white mb-3">Google Vertex AI</h3>
-  <p class="text-slate-400 text-sm leading-relaxed">
-   Google Vertex AI は、設計検討や検証支援に活用しています。複数のAIを役割分担して使う開発体制を採っています。
-  </p>
-  </div>
- </div>
- </section>
 
+  <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <!-- Cloudflare -->
+    <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-orange-500/50 transition-colors group">
+      <i data-lucide="cloud-lightning" class="w-10 h-10 text-orange-500 mb-6 group-hover:scale-110 transition-transform"></i>
+      <h3 class="text-xl font-bold text-white mb-3">Cloudflare Workers</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">
+        Cloudflare Workers を活用し、Webhook処理や外部連携を安定して受けるための基盤として利用しています。
+      </p>
+    </div>
+
+    <!-- 開発方針 -->
+    <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-colors group">
+      <i data-lucide="shield-check" class="w-10 h-10 text-blue-500 mb-6 group-hover:scale-110 transition-transform"></i>
+      <h3 class="text-xl font-bold text-white mb-3">構築・検証方針</h3>
+      <p class="text-slate-400 text-sm leading-relaxed">
+        初期段階では、決済後運用の実務課題に合わせて、確認しやすさ、追跡しやすさ、再処理しやすさを重視しながら、段階的に構築と検証を進めています。
+      </p>
+    </div>
+  </div>
+</section>
+ 
 <!-- Founder -->
 <section class="py-24 bg-slate-950 border-y border-slate-800">
   <div class="container mx-auto px-6">
     <div class="max-w-3xl mx-auto text-center mb-12">
       <h2 class="text-3xl font-bold text-white mb-4">Founder</h2>
       <p class="text-slate-400 leading-relaxed">
-        LogFabric is an independent startup project currently planned, developed, and operated by its founder, HIDEAKI KUBO.
+        LogFabric is an independent startup project led by its founder, HIDEAKI KUBO.
       </p>
     </div>
 
@@ -149,8 +142,8 @@
         確認漏れ、対応漏れ、追跡しづらさ、再処理の難しさといった実務課題に取り組んでいます。
       </p>
       <p class="text-slate-400 leading-relaxed">
-        LogFabric は、Lステップ、UTAGE、Stripe など複数サービスをまたぐ運用を、
-        より整理され、追跡しやすく、再確認・再処理しやすい形で支えることを目的に開発しています。
+        Lステップ、UTAGE、Stripe などの外部サービス間で発生する決済後オペレーションを対象に、
+  　　　確認しやすさ、追跡しやすさ、再確認・再処理しやすさを重視した基本的な運用基盤を構築・検証中。
       </p>
     </div>
   </div>
