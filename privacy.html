@@ -10,7 +10,6 @@
  <script src="https://unpkg.com/lucide@latest"></script>
   
  <style>
- /* テキストグラデーション用ユーティリティ (共通) */
  .text-gradient {
   background: linear-gradient(135deg, #f97316 0%, #8b5cf6 50%, #3b82f6 100%);
   -webkit-background-clip: text;
@@ -42,14 +41,17 @@
   LogFabric Privacy Policy
   </h1>
   <p class="text-slate-400 text-sm">
-  最終改定日: 2026年3月21日
+  最終改定日: 2026年6月25日
   </p>
  </div>
 
  <div class="space-y-10 text-slate-300 leading-relaxed">
   <section>
   <p class="mb-4">
-   LogFabric Project（以下「当プロジェクト」）は、提供するサービス「LogFabric」（以下「本サービス」）における、ユーザーの個人情報およびシステム運用データの取り扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」）を定めます。本サービスは現在、初期プロトタイプ開発段階にあり、サービスの拡充に伴い本ポリシーの内容は改定される場合があります。
+   LogFabric Project（以下「当プロジェクト」）は、提供するデジタルコンテンツ（以下「本製品」）における、ユーザーの情報の取り扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」）を定めます。
+  </p>
+  <p class="mb-4">
+   本製品は、Cursorユーザー向けの standalone ZIP ファイルとして Gumroad を通じて提供されます。現在の製品は cursor-pr-discipline Pro Pack v0 であり、Cursor .mdc ルール、Before/Afterサンプル、および人間主導のAI PR ワークフローのための判断ログテンプレートを含みます。
   </p>
   </section>
 
@@ -58,12 +60,14 @@
    <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">1</span>
    収集する情報
   </h2>
-  <p class="mb-3">当プロジェクトは、本サービスの提供にあたり、以下の情報を収集する場合があります。</p>
+  <p class="mb-3">当プロジェクトは、以下の情報を収集する場合があります。</p>
   <ul class="list-disc pl-5 space-y-2 text-slate-400">
-   <li><strong>ユーザーに関する情報:</strong> 氏名、メールアドレス、所属企業名、その他お問い合わせやテスト参加時にご提供いただく連絡先情報。</li>
-   <li><strong>利用状況に関する情報:</strong> アクセスログ、IPアドレス、ブラウザ情報、端末情報等。</li>
-   <li><strong>連携データ:</strong> 本サービスの機能提供に伴い、連携する外部サービスからAPI等を経由して取得する運用ログやトランザクションデータ。</li>
+   <li><strong>お問い合わせ情報:</strong> お問い合わせ時にご提供いただいた氏名、メールアドレス等の連絡先情報。</li>
+   <li><strong>アクセス情報:</strong> 本ウェブサイトへのアクセスログ、IPアドレス、ブラウザ情報等。</li>
   </ul>
+  <p class="mt-4 text-slate-400">
+   当プロジェクトは、購入者のリポジトリデータ、ソースコード、支払いカード情報、APIキー、外部サービスのデータ、またはその他の運用データを収集・保持しません。購入および決済処理は Gumroad が行います。
+  </p>
   </section>
 
   <section>
@@ -73,42 +77,28 @@
   </h2>
   <p class="mb-3">収集した情報は、以下の目的のために利用いたします。</p>
   <ul class="list-disc pl-5 space-y-2 text-slate-400">
-   <li>本サービス（決済後オペレーション統制基盤）の提供、維持、保護および機能改善のため</li>
-   <li>初期プロトタイプの検証、テスト、およびシステム安定性向上のため</li>
-   <li>ユーザーからのお問い合わせ対応、およびサポート提供のため</li>
-   <li>本サービスに関するご案内、アップデート情報等のご連絡のため</li>
+   <li>本製品に関するお問い合わせへの対応のため</li>
+   <li>本ウェブサイトの維持・改善のため</li>
+   <li>本製品に関する重要なお知らせのご連絡のため</li>
   </ul>
   </section>
 
   <section>
   <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
    <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">3</span>
-   外部サービスとの連携に関する説明
+   情報管理について
   </h2>
   <p class="text-slate-400 mb-3">
-   本サービスは、Stripeなどの外部サービス間で発生する運用処理を、安全・追跡可能・再処理可能な形で統制することを目的としています。
+   当プロジェクトは、収集した情報の漏洩、滅失、または毀損の防止、その他収集した情報の適切な管理のために、必要かつ適切な対策を講じます。
   </p>
   <p class="text-slate-400">
-   そのため、各外部サービスとのAPI連携を通じて必要なデータ（決済処理のステータス、ユーザーID、Webhookペイロード等）を取得・処理しますが、これらのデータは運用処理の統制、エラー追跡、および再処理の実行という目的の範囲内でのみ厳格に取り扱われます。
+   法令で定められた場合を除き、あらかじめユーザーの同意を得ることなく、個人情報を第三者に提供することはありません。
   </p>
   </section>
 
   <section>
   <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
    <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">4</span>
-   情報管理について
-  </h2>
-  <p class="text-slate-400 mb-3">
-   当プロジェクトは、収集した情報の漏洩、滅失、または毀損の防止、その他収集した情報の適切な管理のために、必要かつ適切なセキュリティ対策を講じます。
-  </p>
-  <p class="text-slate-400">
-   また、法令で定められた場合を除き、あらかじめユーザーの同意を得ることなく、個人情報を第三者に提供することはありません。
-  </p>
-  </section>
-
-  <section>
-  <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-   <span class="w-6 h-6 rounded bg-slate-800 text-slate-400 flex items-center justify-center text-sm">5</span>
    お問い合わせ先
   </h2>
   <p class="text-slate-400 mb-3">
@@ -140,7 +130,6 @@
  </div>
  </footer>
 
- <!-- Lucideアイコンの初期化スクリプト -->
  <script>
  lucide.createIcons();
  </script>

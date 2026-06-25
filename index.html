@@ -3,7 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>LogFabric | 決済後オペレーション統制基盤</title>
+ <title>LogFabric | Cursor 向け Human-controlled AI PR Workflow</title>
   
  <!-- Tailwind CSS & Lucide Icons CDN -->
  <script src="https://cdn.tailwindcss.com"></script>
@@ -38,19 +38,23 @@
  <!-- ヒーローセクション -->
  <section class="pt-32 pb-20 md:pt-48 md:pb-32 container mx-auto px-6 text-center">
  <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
-  継続課金ビジネスの<br class="hidden md:block">
-  <span class="text-gradient">決済後オペレーションを統制する。</span>
+  Cursor で AI が PR を進める前に、<br class="hidden md:block">
+  <span class="text-gradient">人が判断するワークフローを。</span>
  </h1>
  <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-  LogFabric は、継続課金商材の決済後オペレーションを対象に、Stripe など複数サービスにまたがる確認・照合・対応管理を、安全・追跡可能・再処理可能な形で支える SaaS / 運用基盤です。
+  LogFabric は、Cursor 向けの Human-controlled AI PR ワークフローを提供します。cursor-pr-discipline Free Pack（GitHub）と Pro Pack v0（Gumroad）で、AI レビューやテスト失敗への対応を、分類と人の判断を経て進められるようにします。
  </p>
  <p class="text-sm md:text-base text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed">
-  主な対象は、継続課金型サービスを運営し、Stripe など複数ツールをまたいだ決済後運用に課題を持つ事業者です。
+  Cursor で AI 支援開発を行い、PR のスコープと判断を自分でコントロールしたい開発者・チーム向けです。
  </p> 
- <div class="flex items-center justify-center gap-4">
-  <a href="mailto:info@logfabric.com" class="inline-flex items-center gap-2 bg-white text-slate-950 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform">
-   <i data-lucide="mail" class="w-5 h-5"></i>
-   導入のご相談
+ <div class="flex flex-wrap items-center justify-center gap-4">
+  <a href="https://github.com/logfabricteam/cursor-pr-discipline" class="inline-flex items-center gap-2 bg-slate-800 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-700 transition-colors">
+   <i data-lucide="github" class="w-5 h-5"></i>
+   Free Pack（GitHub）
+  </a>
+  <a href="https://kubo03.gumroad.com/l/cursor-pr-discipline" class="inline-flex items-center gap-2 bg-white text-slate-950 px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform">
+   <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+   Pro Pack v0（Gumroad）
   </a>
  </div>
  </section>
@@ -59,8 +63,8 @@
  <section class="py-20 bg-slate-900 border-y border-slate-800">
  <div class="container mx-auto px-6">
   <div class="text-center mb-16">
-  <h2 class="text-3xl font-bold text-white mb-4">複雑化する決済後運用を、見える形にする</h2>
-  <p class="text-slate-400 max-w-2xl mx-auto">複数サービスにまたがる確認・照合・対応管理を、追跡しやすく、漏れにくい運用へ。</p>
+  <h2 class="text-3xl font-bold text-white mb-4">AI が PR を一気に進めてしまう前に、判断の余地を残す</h2>
+  <p class="text-slate-400 max-w-2xl mx-auto">レビューコメントや実行結果への対応を、分類してから人が proceed / defer / skip を選べるワークフローへ。</p>
   </div>
    
   <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -71,9 +75,9 @@
    </div>
    <h3 class="text-xl font-bold text-white mb-3">解決すべき課題</h3>
    <ul class="space-y-3 text-slate-400">
-   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 決済後の確認・照合作業が複数サービスに分散し、把握しづらい</li>
-   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 支払い失敗、停止、復旧などの後続対応が漏れやすい</li>
-   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> エラーや差分が発生した際に、追跡や再確認に手間がかかる</li>
+   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> AI がレビューコメントをそのまま全部反映してしまい、PR スコープが広がりやすい</li>
+   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> テスト・lint・ビルド失敗を AI が即修正し、今回の PR 起因か既存問題か区別しづらい</li>
+   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 「直して」と言うだけで、何を直すべきか人間が判断する前に変更が進んでしまう</li>
    </ul>
   </div>
    
@@ -84,11 +88,11 @@
    <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 border border-blue-500/30 text-blue-400 relative z-10">
    <i data-lucide="check-circle-2" class="w-6 h-6"></i>
    </div>
-   <h3 class="text-xl font-bold text-white mb-3 relative z-10">LogFabricの解決策</h3>
+   <h3 class="text-xl font-bold text-white mb-3 relative z-10">cursor-pr-discipline のアプローチ</h3>
    <ul class="space-y-3 text-slate-300 relative z-10">
-   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 決済後の確認・照合・対応管理を、1つの運用基盤で整理しやすくする</li>
-   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 処理状況や差分を追跡しやすくし、手動対応の判断をしやすくする</li>
-    <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> エラーや例外時でも、後から再確認・再処理しやすい形で支える</li>
+   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> レビューコメントと実行結果を先に分類し、対応前に人の判断を待つ</li>
+   <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 現在の PR で直すべきものと、後回し・スキップを切り分けやすくする</li>
+    <li class="flex items-start gap-2"><i data-lucide="minus" class="w-5 h-5 shrink-0 mt-0.5"></i> 小さくレビュー可能な PR を保ちながら、AI 支援の速度を活かす</li>
    </ul>
   </div>
   </div>
@@ -98,28 +102,28 @@
 <!-- テクノロジー -->
 <section class="py-24 container mx-auto px-6">
   <div class="text-center mb-16">
-    <h2 class="text-3xl font-bold text-white mb-4">運用を支える基盤</h2>
+    <h2 class="text-3xl font-bold text-white mb-4">cursor-pr-discipline の構成</h2>
     <p class="text-slate-400 max-w-2xl mx-auto">
-      LogFabric は、安全な処理、追跡可能性、再確認・再処理のしやすさを重視して、運用基盤を段階的に構築しています。
+      Free Pack で基本を試し、Pro Pack v0 でより実践的なルールとテンプレートを利用できます。
     </p>
   </div>
 
   <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">   
-    <!-- MongoDB Atlas -->
+    <!-- Free Pack -->
     <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-green-500/50 transition-colors group">
-      <i data-lucide="database" class="w-10 h-10 text-green-500 mb-6 group-hover:scale-110 transition-transform"></i>
-      <h3 class="text-xl font-bold text-white mb-3">MongoDB Atlas</h3>
+      <i data-lucide="github" class="w-10 h-10 text-green-500 mb-6 group-hover:scale-110 transition-transform"></i>
+      <h3 class="text-xl font-bold text-white mb-3">cursor-pr-discipline Free Pack</h3>
       <p class="text-slate-400 text-sm leading-relaxed">
-        MongoDB Atlas を活用し、Webhookイベント、対応キュー、監査ログを記録・追跡できるデータ基盤として利用しています。
+        GitHub で公開している Cursor Project Rules とガイド。Human-controlled AI PR ワークフローの基本を、すぐに試せます。
       </p>
     </div>
    
-    <!-- 開発方針 -->
+    <!-- Pro Pack v0 -->
     <div class="p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition-colors group">
-      <i data-lucide="shield-check" class="w-10 h-10 text-blue-500 mb-6 group-hover:scale-110 transition-transform"></i>
-      <h3 class="text-xl font-bold text-white mb-3">構築・検証方針</h3>
+      <i data-lucide="package" class="w-10 h-10 text-blue-500 mb-6 group-hover:scale-110 transition-transform"></i>
+      <h3 class="text-xl font-bold text-white mb-3">cursor-pr-discipline Pro Pack v0</h3>
       <p class="text-slate-400 text-sm leading-relaxed">
-        初期段階では、決済後運用の実務課題に合わせて、確認しやすさ、追跡しやすさ、再処理しやすさを重視しながら、段階的に構築と検証を進めています。
+        Gumroad で購入後、スタンドアロン ZIP として提供。AI レビュー triage と実行結果 triage など、より実践向けのルールセットを含みます。
       </p>
     </div>
   </div>
@@ -138,12 +142,12 @@
     <div class="max-w-3xl mx-auto bg-slate-900 rounded-2xl border border-slate-800 p-8 md:p-10">
       <h3 class="text-xl font-bold text-white mb-4">About the Founder</h3>
       <p class="text-slate-400 leading-relaxed mb-4">
-        HIDEAKI KUBO は LogFabric の創業者です。継続課金ビジネスにおける決済後オペレーションの負荷、
-        確認漏れ、対応漏れ、追跡しづらさ、再処理の難しさといった実務課題に取り組んでいます。
+        HIDEAKI KUBO は LogFabric の創業者です。Cursor で AI 支援開発を進める中で、
+        PR スコープの暴走や、判断前の自動修正といった課題に取り組んでいます。
       </p>
       <p class="text-slate-400 leading-relaxed">
-        LogFabric は、Stripe など複数サービスをまたぐ運用を、より整理され、
-        追跡しやすく、再確認・再処理しやすい形で支えることを目的に開発しています。
+        LogFabric は、cursor-pr-discipline シリーズを通じて、
+        Human-controlled AI PR ワークフローを Cursor ユーザー向けに提供しています。
       </p>
     </div>
   </div>
@@ -158,7 +162,7 @@
   <div class="text-center mb-16">
   <h2 class="text-3xl font-bold text-white mb-4">プロジェクト ロードマップ</h2>
   <p class="text-slate-400">
-  現在、初期プロトタイプ開発段階です。継続課金ビジネスにおける決済後運用の実務課題を前提に、機能設計と検証を進めています。
+  現在、cursor-pr-discipline Free Pack の公開と Pro Pack v0 の提供を進めています。Human-controlled AI PR ワークフローの実践と検証を重ねています。
   </p>
   </div>
 
@@ -173,9 +177,9 @@
    </div>
    <div class="pt-1.5 pb-8">
    <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-3">
-    初期プロトタイプ開発 <span class="text-xs font-semibold px-2 py-1 bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">Current</span>
+    Free Pack と Pro Pack v0 <span class="text-xs font-semibold px-2 py-1 bg-blue-500/20 text-blue-400 rounded-full border border-blue-500/30">Current</span>
    </h3>
-   <p class="text-slate-400">Stripe などをまたぐ決済後オペレーションを対象に、確認しやすさ、追跡しやすさ、再確認・再処理しやすさを重視した運用基盤を構築・検証中。</p>
+   <p class="text-slate-400">GitHub で Free Pack を公開。Gumroad で Pro Pack v0 をスタンドアロン ZIP として提供。AI レビュー triage と実行結果 triage を中心に検証中。</p>
    </div>
   </div>
 
@@ -188,8 +192,8 @@
    <div class="w-px h-full bg-slate-800 my-2 min-h-[60px]"></div>
    </div>
    <div class="pt-1.5 pb-8">
-   <h3 class="text-xl font-bold text-white mb-2">インテグレーションの拡大</h3>
-   <p class="text-slate-400">主要な決済システムや、多様なマーケティングオートメーション・ツールとのAPI連携を強化し、汎用的なオペレーション基盤へ拡張。</p>
+   <h3 class="text-xl font-bold text-white mb-2">Pro Pack の拡充</h3>
+   <p class="text-slate-400">Human-controlled AI PR ワークフロー向けに、より多くの事例、判断テンプレート、運用メモを Pro Pack に追加。</p>
    </div>
   </div>
 
@@ -201,8 +205,8 @@
    </div>
    </div>
    <div class="pt-1.5">
-   <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-400 mb-2">運用支援機能の拡張</h3>
-   <p class="text-slate-400">確認・照合・対応管理をより扱いやすくし、必要な部分は自動化しながらも、追跡・監査・再処理を重視した運用基盤として拡張します。</p>
+   <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-400 mb-2">ワークフロー知見の拡張</h3>
+   <p class="text-slate-400">Expanded examples, decision templates, and workflow notes for human-controlled AI PR workflows.</p>
    </div>
   </div>
   </div>
@@ -213,14 +217,20 @@
  <section class="py-24 container mx-auto px-6 text-center">
  <div class="max-w-3xl mx-auto p-10 md:p-14 rounded-3xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 shadow-2xl">
   <i data-lucide="rocket" class="w-12 h-12 text-orange-500 mx-auto mb-6"></i>
-  <h2 class="text-3xl font-bold text-white mb-6">決済後運用の負担を減らしたい方へ</h2>
+  <h2 class="text-3xl font-bold text-white mb-6">Cursor で PR 運用を整えたい方へ</h2>
   <p class="text-slate-400 mb-8 leading-relaxed max-w-xl mx-auto">
-  現在、継続課金型サービスの決済後運用に課題を持つ事業者様や、Stripe など複数ツールをまたぐ運用整理を検討している事業者様からのご相談を受け付けています。
+  Free Pack は GitHub から無料で入手できます。Pro Pack v0 は Gumroad で購入後、ZIP ファイルとしてお渡しします。ご質問は info@logfabric.com まで。
   </p>
-  <a href="mailto:info@logfabric.com" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all">
-  <i data-lucide="mail" class="w-5 h-5"></i>
-  info@logfabric.com へ連絡する
+  <div class="flex flex-wrap items-center justify-center gap-4">
+  <a href="https://github.com/logfabricteam/cursor-pr-discipline" class="inline-flex items-center gap-2 bg-slate-800 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-700 transition-colors">
+  <i data-lucide="github" class="w-5 h-5"></i>
+  Free Pack を GitHub で見る
   </a>
+  <a href="https://kubo03.gumroad.com/l/cursor-pr-discipline" class="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all">
+  <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+  Pro Pack v0 を Gumroad で購入
+  </a>
+  </div>
  </div>
  </section>
 
@@ -228,12 +238,14 @@
  <footer class="border-t border-slate-900 py-8 text-center text-slate-600 text-sm">
  <div class="container mx-auto px-6">
  <div class="flex justify-center gap-6 mb-4">
-  <a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
-  <a href="/terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+  <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+  <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
   </div>
   <div class="mb-4 space-y-1">
   <p class="text-slate-500 text-sm">Founder / Operator: HIDEAKI KUBO (LogFabric Project)</p>
-  <p class="text-slate-500 text-sm">Contact: info@logfabric.com</p>
+  <p class="text-slate-500 text-sm">
+    Contact: <a href="mailto:info@logfabric.com" class="hover:text-white transition-colors">info@logfabric.com</a>
+  </p>
   <p class="text-slate-500 text-sm">LogFabric is operated as an independent startup project led by its founder.</p>
   </div>
  </div>
